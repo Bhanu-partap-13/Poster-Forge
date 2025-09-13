@@ -1,0 +1,5 @@
+{
+  "name": "AI Poster Forge",
+  "description": "An interactive poster designing application that uses AI to remove product backgrounds, generate creative scenes, and allow for iterative editing to produce stunning, downloadable marketing visuals.",
+  "requestFramePermissions": []
+}
