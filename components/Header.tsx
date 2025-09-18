@@ -15,9 +15,8 @@ export const Header: React.FC = () => {
                 href="https://github.com/google-gemini"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-cyan-400 hover:text-white transition-colors duration-300"
-            >
-                Powered by Gemini API
+                className="text-sm text-cyan-400 hover:text-white transition-colors duration-300">
+             Made by Bhanu Partap
             </a>
         </header>
     );

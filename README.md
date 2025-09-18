@@ -1,20 +1,75 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# PosterForge
 
-This contains everything you need to run your app locally.
+PosterForge is a lightweight poster-generation web app that uses Gemini APIs for image/asset generation and provides a simple workspace to compose and export posters.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1LLmXdkuuWFrwCpDJbynK1W80XddYvA7n
+> Tech Stack Used: TypeScript, Gemini API
 
-## Run Locally
+## Quick Start
 
-**Prerequisites:**  Node.js
+1. Verify Node:
+
+```powershell
+node --version
+npm --version
+```
+
+2. Create a local environment file
+
+Create a file named `.env.local` in the project root and add your Gemini API key (or other environment variables). Example:
+
+```text
+# .env.local
+GEMINI_API_KEY=your_real_gemini_api_key_here
+```
+
+3. Install dependencies
+
+```powershell
+npm install
+```
+
+4. Run the app in development mode
+
+```powershell
+npm run dev
+```
+
+Open http://localhost:5173 (or the port shown in your terminal) in your browser.
+
+## What a collaborator should know
+
+- The app expects `GEMINI_API_KEY` (or similarly-named keys) inside `.env.local` at runtime. Keep this file out of source control.
+- Key frontend entry points:
+   - `index.tsx` – app bootstrap
+   - `App.tsx` – top-level layout
+   - `components/Workspace.tsx` – main poster editor
+   - `services/geminiService.ts` – Gemini API wrapper
+
+## Environment variables
+
+- `.env.local` (example)
+
+```text
+GEMINI_API_KEY=your_real_gemini_api_key_here
+# Add other env values here if needed
+```
+
+Notes:
+- Never commit `.env.local` to the repo.
+- If you need to expose client-side variables, prefix them with `VITE_`.
+
+## Contributing
+
+1. Fork the repo and create a feature branch
+2. Add tests or visual proof for UI changes when possible
+3. Open a PR with a clear description of the change
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## License
+
+This project does not include a license file by default. Add a `LICENSE` if you want to make the terms explicit.
+
+---
+
+>>>>>>> 960a35e (improvements)
