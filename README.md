@@ -65,11 +65,13 @@ Notes:
 2. Add tests or visual proof for UI changes when possible
 3. Open a PR with a clear description of the change
 
+--
+## Our Team
+<a href="https://github.com/Bhanu-partap-13/Poster-Forge/graphs/contributors">
+<img src="https://contributors-img.web.app/image?repo=Bhanu-partap-13/Poster-Forge"/>
 
 ## License
 
 This project does not include a license file by default. Add a `LICENSE` if you want to make the terms explicit.
 
 ---
-
->>>>>>> 960a35e (improvements)
